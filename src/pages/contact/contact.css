@@ -1,0 +1,176 @@
+.contact-me {
+  width: 100%;
+  padding-inline: 10em;
+  padding-block: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-me h1 {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.contact-me h1::first-letter {
+  color: #66fcf1;
+}
+
+.contact-me form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.contact-me form .form-control {
+  width: 20em;
+  height: 2em;
+}
+
+.contact-me form .form-control input, .contact-me form .form-control button,
+.contact-me form .form-control textarea {
+  color: #f0f0f0;
+  width: 100%;
+  padding: 0.5em 0.6em;
+  outline: none;
+  border: 1px solid #66fcf1;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.contact-me form .form-control input::-webkit-input-placeholder, .contact-me form .form-control button::-webkit-input-placeholder,
+.contact-me form .form-control textarea::-webkit-input-placeholder {
+  color: #f0f0f0;
+  opacity: 0.7;
+}
+
+.contact-me form .form-control input:-ms-input-placeholder, .contact-me form .form-control button:-ms-input-placeholder,
+.contact-me form .form-control textarea:-ms-input-placeholder {
+  color: #f0f0f0;
+  opacity: 0.7;
+}
+
+.contact-me form .form-control input::-ms-input-placeholder, .contact-me form .form-control button::-ms-input-placeholder,
+.contact-me form .form-control textarea::-ms-input-placeholder {
+  color: #f0f0f0;
+  opacity: 0.7;
+}
+
+.contact-me form .form-control input::placeholder, .contact-me form .form-control button::placeholder,
+.contact-me form .form-control textarea::placeholder {
+  color: #f0f0f0;
+  opacity: 0.7;
+}
+
+.contact-me form .form-control button {
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.contact-me form .form-control .inprogress {
+  border: none;
+  position: relative;
+}
+
+.contact-me form .form-control .inprogress::before, .contact-me form .form-control .inprogress::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #66fcf1;
+  left: 54%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-animation: Loader-one 250ms ease-in-out infinite;
+          animation: Loader-one 250ms ease-in-out infinite;
+}
+
+.contact-me form .form-control .inprogress::after {
+  left: 46%;
+  background: #f0f0f0;
+  -webkit-animation: Loader-two 250ms ease-in-out infinite;
+          animation: Loader-two 250ms ease-in-out infinite;
+}
+
+@-webkit-keyframes Loader-one {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes Loader-one {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes Loader-two {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes Loader-two {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

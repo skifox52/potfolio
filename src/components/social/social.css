@@ -1,0 +1,27 @@
+.social-container {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  padding: 0.75em 1em;
+  border-radius: 20px;
+}
+
+.social-container ul {
+  list-style: none;
+}
+
+.social-container ul li {
+  margin-block: 0.5em;
+}
+
+.social-container ul li a {
+  font-size: 2.2em;
+  color: inherit;
+  -webkit-transition: color 100ms ease-in;
+  transition: color 100ms ease-in;
+}
+
+.social-container ul li a:hover {
+  color: #45a29e;
+}
+/*# sourceMappingURL=social.css.map */

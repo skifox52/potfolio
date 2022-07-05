@@ -1,0 +1,24 @@
+.footer {
+  position: fixed;
+  width: 100vw;
+  background: #45a29e;
+  height: 1.5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  display: inline-block;
+}
+/*# sourceMappingURL=footer.css.map */

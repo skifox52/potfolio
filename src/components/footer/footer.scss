@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  width: 100vw;
+  background: #45a29e;
+  height: 1.5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    display: inline-block;
+  }
+}

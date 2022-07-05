@@ -1,0 +1,96 @@
+.navbar {
+  height: 100vh;
+  max-width: 10em;
+  min-width: 8em;
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .hamburger {
+  top: 15px;
+  left: 15px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.navbar .hamburger span {
+  display: block;
+  width: 27.6px;
+  height: 1px;
+  margin-bottom: 8.5px;
+  background: #f0f0f0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: opacity 300ms ease-in-out, -webkit-transform 550ms cubic-bezier(0.39, 0.52, 0.81, 1.35);
+  transition: opacity 300ms ease-in-out, -webkit-transform 550ms cubic-bezier(0.39, 0.52, 0.81, 1.35);
+  transition: transform 550ms cubic-bezier(0.39, 0.52, 0.81, 1.35), opacity 300ms ease-in-out;
+  transition: transform 550ms cubic-bezier(0.39, 0.52, 0.81, 1.35), opacity 300ms ease-in-out, -webkit-transform 550ms cubic-bezier(0.39, 0.52, 0.81, 1.35);
+}
+
+.navbar .hamburger span:hover {
+  opacity: 0.7;
+}
+
+.navbar .hamburger span:last-child {
+  margin-bottom: 0;
+}
+
+.navbar .hamburger.active span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar .hamburger.active span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navbar .hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar .navbar-container {
+  background: #45a29e;
+  overflow: hidden;
+  padding: 1em 1em 1em;
+  border-top-right-radius: 10em;
+  border-bottom-right-radius: 100vw;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+
+.navbar .navbar-container ul li {
+  list-style: none;
+  margin-block: 1em;
+}
+
+.navbar .navbar-container ul li a {
+  color: #1f2833;
+  text-decoration: none;
+  font-size: 2.4em;
+  -webkit-filter: drop-shadow(0px 0px 10px #66fcf1);
+          filter: drop-shadow(0px 0px 10px #66fcf1);
+  -webkit-transition: color 250ms ease-in-out, -webkit-filter 150ms ease-in-out;
+  transition: color 250ms ease-in-out, -webkit-filter 150ms ease-in-out;
+  transition: color 250ms ease-in-out, filter 150ms ease-in-out;
+  transition: color 250ms ease-in-out, filter 150ms ease-in-out, -webkit-filter 150ms ease-in-out;
+}
+
+.navbar .navbar-container.active {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,46 @@
+.home-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+  padding-left: 4em;
+  padding-right: 6em;
+}
+
+.home-container h1 {
+  letter-spacing: 1px;
+  font-size: 4em;
+  margin-bottom: 0.6rem;
+}
+
+.home-container h1::first-letter {
+  color: #66fcf1;
+}
+
+.home-container h1:first-child {
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.home-container h1:nth-child(2) {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.home-container h3 {
+  color: #66fcf1;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.home-container .bscodeslash {
+  font-size: 8rem;
+}
+/*# sourceMappingURL=home.css.map */
